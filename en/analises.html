@@ -1,40 +1,66 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Historical, symbolic and scientific analysis.">
-  <title>SASC - Symbolic Comparative Analysis System</title>
-  <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<title>Biblioteca de Análises</title>
+<style>
+body { font-family: Arial; background: #111; color: white; text-align: center; }
+.popup { display: none; position: fixed; z-index: 999; left: 0; top: 0; width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.85); overflow: auto;}
+.popup-content { background-color: #fefefe; color: #000; margin: 3% auto; padding: 20px; border: 1px solid #888;
+    width: 80%; max-height: 85%; overflow-y: auto; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.5);}
+.fechar { color: #aaa; float: right; font-size: 28px; font-weight: bold; }
+.fechar:hover, .fechar:focus { color: black; text-decoration: none; cursor: pointer; }
+h2 { text-align: center; font-size: 26px; margin-top: 0; }
+button { margin: 10px; padding: 10px 20px; cursor: pointer; }
+</style>
 </head>
 <body>
+<h1>Biblioteca de Análises Simbólicas</h1>
 
-<header style="display: flex; align-items: center; justify-content: space-between;">
-  <div style="display: flex; align-items: center;">
-    <img src="images/sasc_logo_black.png" alt="SASC Logo" style="height: 50px;">
-  </div>
-  <nav>
-    <ul>
-      <li><a href="index.html">Início</a></li>
-      <li><a href="sobre.html">Sobre</a></li>
-      <li><a href="metodo.html">Método</a></li>
-      <li><a href="prompt.html">Prompt</a></li>
-      <li><a href="analises.html">Análises</a></li>
-      <li><a href="contato.html">Contato</a></li>
-    </ul>
-  </nav>
-</header>
+<div>
+<button onclick="abrirPopup('diluvio')">🌊 Dilúvio Universal</button>
+<button onclick="abrirPopup('atlantida')">🏛️ Atlântida</button>
+<button onclick="abrirPopup('piramides')">🔺 Data Real das Pirâmides</button>
+<button onclick="abrirPopup('cruzamento')">🔗 Cruzamento</button>
+</div>
 
-<main>
-  <h2>Bem-vindo ao SASC</h2>
-  <p>O Sistema de Análise Simbólica Comparativa é uma metodologia inovadora para análise histórica, simbólica e científica, cruzando múltiplas fontes para reconstruir a história esquecida da humanidade.</p>
-  <h3><em>A história deixa rastros. O SASC decifra.</em></h3>
-  <h3><em>O passado não está perdido. Está codificado.</em></h3>
-  <img src="images/sasc_logo_black.png" alt="Logotipo do SASC" style="max-width: 220px; margin-top: 20px;">
-</main>
-<footer>
-  <p>&copy; 2025 SASC - Todos os direitos reservados.</p>
-</footer>
+<div id="popup-diluvio" class="popup">
+<div class="popup-content">
+<span class="fechar" onclick="fecharPopup('diluvio')">&times;</span>
+<h2>🌊 Análise Simbólica — Dilúvio Universal</h2>
+<p>Conteúdo completo do Dilúvio Universal.</p>
+</div>
+</div>
+
+<div id="popup-atlantida" class="popup">
+<div class="popup-content">
+<span class="fechar" onclick="fecharPopup('atlantida')">&times;</span>
+<h2>🏛️ Análise Simbólica — Atlântida</h2>
+<p>Conteúdo completo da Atlântida.</p>
+</div>
+</div>
+
+<div id="popup-piramides" class="popup">
+<div class="popup-content">
+<span class="fechar" onclick="fecharPopup('piramides')">&times;</span>
+<h2>🔺 Análise Simbólica — Data Real das Pirâmides</h2>
+<p>Conteúdo completo das Pirâmides.</p>
+</div>
+</div>
+
+<div id="popup-cruzamento" class="popup">
+<div class="popup-content">
+<span class="fechar" onclick="fecharPopup('cruzamento')">&times;</span>
+<h2>🔗 Cruzamento entre as três análises</h2>
+<p>Conteúdo completo do Cruzamento final.</p>
+</div>
+</div>
+
+<script>
+function abrirPopup(id) { document.getElementById('popup-' + id).style.display = 'block'; }
+function fecharPopup(id) { document.getElementById('popup-' + id).style.display = 'none'; }
+</script>
 </body>
 </html>

@@ -1,251 +1,66 @@
-<!DOCTYPE html>
 
+<!DOCTYPE html>
 <html lang="pt">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="Método - SASC" name="description"/>
-<title>Biblioteca de Análises - SASC</title>
-<link href="css/style.css" rel="stylesheet"/>
+<meta charset="UTF-8">
+<title>Biblioteca de Análises</title>
 <style>
-.popup {
-    display: none;
-    position: fixed;
-    z-index: 999;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.85);
-}
-.popup-content {
-    background-color: #fefefe;
-    margin: 3% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    max-height: 85%;
-    overflow-y: auto;
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
-}
-.fechar {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-.fechar:hover,
-.fechar:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-h2 {
-    text-align: center;
-    font-size: 26px;
-    margin-top: 0;
-}
-button {
-    margin: 10px;
-    padding: 10px 20px;
-    cursor: pointer;
-}
-</style></head>
+body { font-family: Arial; background: #111; color: white; text-align: center; }
+.popup { display: none; position: fixed; z-index: 999; left: 0; top: 0; width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.85); overflow: auto;}
+.popup-content { background-color: #fefefe; color: #000; margin: 3% auto; padding: 20px; border: 1px solid #888;
+    width: 80%; max-height: 85%; overflow-y: auto; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.5);}
+.fechar { color: #aaa; float: right; font-size: 28px; font-weight: bold; }
+.fechar:hover, .fechar:focus { color: black; text-decoration: none; cursor: pointer; }
+h2 { text-align: center; font-size: 26px; margin-top: 0; }
+button { margin: 10px; padding: 10px 20px; cursor: pointer; }
+</style>
+</head>
 <body>
-<header style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
-<div style="margin-bottom: 10px;">
-<img alt="SASC Logo" src="images/sasc_logo_black.png" style="height: 50px;"/>
-</div>
-<nav>
-<ul style="display: flex; list-style: none; margin: 0; padding: 0;">
-<li style="margin: 0 15px;"><a href="../index.html">Início</a></li><li style="margin: 0 15px;"><a href="sobre.html">Sobre</a></li><li style="margin: 0 15px;"><a href="metodo.html">Método</a></li><li style="margin: 0 15px;"><a href="prompt.html">Prompt</a></li><li style="margin: 0 15px;"><a href="analises.html">Análises</a></li><li style="margin: 0 15px;"><a href="contato.html">Contato</a></li>
-</ul>
-</nav>
-</header>
-<main>
-<h1>Biblioteca de Análises</h1>
-<p>Explore abaixo análises simbólicas realizadas pelo método SASC. Clique em cada tema para visualizar os resultados completos.</p>
+<h1>Biblioteca de Análises Simbólicas</h1>
+
 <div>
 <button onclick="abrirPopup('diluvio')">🌊 Dilúvio Universal</button>
 <button onclick="abrirPopup('atlantida')">🏛️ Atlântida</button>
 <button onclick="abrirPopup('piramides')">🔺 Data Real das Pirâmides</button>
-<button onclick="abrirPopup('cruzamento')">🔗 Cruzamento entre os três</button>
+<button onclick="abrirPopup('cruzamento')">🔗 Cruzamento</button>
 </div>
-<!-- Popup Dilúvio -->
-<div class="popup" id="popup-diluvio">
+
+<div id="popup-diluvio" class="popup">
 <div class="popup-content">
-<span class="fechar" onclick="fecharPopup('diluvio')">×</span>
+<span class="fechar" onclick="fecharPopup('diluvio')">&times;</span>
 <h2>🌊 Análise Simbólica — Dilúvio Universal</h2>
-<span class="fechar" onclick="fecharPopup('atlantida')">×</span>
-<h2>🏛️ Análise Simbólica: Dilúvio Universal</h2>
-<p>
-<b>Introdução:</b><br/>
-O tema de Dilúvio Universal é uma das maiores polêmicas da história da humanidade. Descrito por Platão, ecoado em diversas tradições espirituais, mitológicas e esotéricas, a Dilúvio Universal representa tanto um arquétipo civilizacional quanto, possivelmente, uma memória real de uma civilização perdida anterior ao atual ciclo humano. Esta análise, pelo método SASC, busca esclarecer o que há de recorrente, verdadeiro e simbólico nesse tema.
-</p>
-<p>
-<b>Rodadas de Pesos e Análises:</b><br/><br/>
-<b>Rodada 1 – Foco Material-Histórico:</b><br/>
-Pesos: Arqueologia 5, História Oficial 4, Folclore 3, Canalizações 2, Espirituais 2, Linguístico 4.<br/>
-Convergências: Vestígios de cidades submersas; registros históricos de culturas avançadas; correspondências linguísticas.<br/>
-Divergências: Ciência não reconhece Dilúvio Universal como local real.<br/><br/>
-<b>Rodada 2 – Foco Espiritual-Esotérico-Folclórico:</b><br/>
-Pesos: Arqueologia 2, História 1, Folclore 5, Canalizações 5, Espirituais 5, Linguístico 4.<br/>
-Convergências: Civilização anterior ao ciclo atual; arquétipo universal da queda; mitos globais.<br/>
-Divergências: Localização e datação variáveis.<br/><br/>
-<b>Rodada 3 – Foco Integrativo:</b><br/>
-Pesos: Todos 4.<br/>
-Convergências: Narrativa comum da civilização avançada; detalhes técnicos de Platão; reforço espiritual sobre a queda.<br/>
-Divergências: Extensão (global ou regional) e grau tecnológico.<br/>
-</p>
-<p>
-<b>Multiplicação da Recorrência Geográfica:</b><br/>
-Aparece em mais de 30 culturas (Dilúvio Universal, Lemúria, Aztlán, Kumari Kandam). Multiplicação de peso x2^29 = 536.870.912. Considerado virtualmente impossível de ser coincidência.
-</p>
-<p>
-<b>Mapa de Convergências:</b><br/>
-- Civilização anterior ao ciclo atual.<br/>
-- Avanço tecnológico e energético.<br/>
-- Colapso por desequilíbrio moral e energético.<br/>
-- Destruição por cataclismos naturais e falhas internas.<br/>
-- Arquétipo universal de queda e reinício.<br/>
-</p>
-<p>
-<b>Mapa de Divergências:</b><br/>
-- Localização exata.<br/>
-- Período cronológico.<br/>
-- Grau de domínio tecnológico.<br/>
-</p>
-<p>
-<b>Interpretação Simbólica Final:</b><br/>
-A análise simbólica da Dilúvio Universal, sob o método SASC, aponta que não se trata de mito isolado, mas de memória ancestral codificada globalmente.<br/>
-O colapso representa um alerta universal: avanço tecnológico sem equilíbrio espiritual e ético leva ao colapso.<br/>
-O arquétipo é: avanço → desequilíbrio → queda → esquecimento → reinício.<br/>
-O SASC confirma que este padrão é um dado simbólico forte, recorrente e não uma ficção isolada.<br/>
-</p>
+<p>Conteúdo completo do Dilúvio Universal.</p>
 </div>
 </div>
-<!-- Popup Atlântida -->
-<div class="popup" id="popup-atlantida">
+
+<div id="popup-atlantida" class="popup">
 <div class="popup-content">
-<span class="fechar" onclick="fecharPopup('atlantida')">×</span>
+<span class="fechar" onclick="fecharPopup('atlantida')">&times;</span>
 <h2>🏛️ Análise Simbólica — Atlântida</h2>
-<span class="fechar" onclick="fecharPopup('atlantida')">×</span>
-<h2>🏛️ Análise Simbólica: Atlântida</h2>
-<p>
-<b>Introdução:</b><br/>
-O tema de Atlântida é uma das maiores polêmicas da história da humanidade. Descrito por Platão, ecoado em diversas tradições espirituais, mitológicas e esotéricas, a Atlântida representa tanto um arquétipo civilizacional quanto, possivelmente, uma memória real de uma civilização perdida anterior ao atual ciclo humano. Esta análise, pelo método SASC, busca esclarecer o que há de recorrente, verdadeiro e simbólico nesse tema.
-</p>
-<p>
-<b>Rodadas de Pesos e Análises:</b><br/><br/>
-<b>Rodada 1 – Foco Material-Histórico:</b><br/>
-Pesos: Arqueologia 5, História Oficial 4, Folclore 3, Canalizações 2, Espirituais 2, Linguístico 4.<br/>
-Convergências: Vestígios de cidades submersas; registros históricos de culturas avançadas; correspondências linguísticas.<br/>
-Divergências: Ciência não reconhece Atlântida como local real.<br/><br/>
-<b>Rodada 2 – Foco Espiritual-Esotérico-Folclórico:</b><br/>
-Pesos: Arqueologia 2, História 1, Folclore 5, Canalizações 5, Espirituais 5, Linguístico 4.<br/>
-Convergências: Civilização anterior ao ciclo atual; arquétipo universal da queda; mitos globais.<br/>
-Divergências: Localização e datação variáveis.<br/><br/>
-<b>Rodada 3 – Foco Integrativo:</b><br/>
-Pesos: Todos 4.<br/>
-Convergências: Narrativa comum da civilização avançada; detalhes técnicos de Platão; reforço espiritual sobre a queda.<br/>
-Divergências: Extensão (global ou regional) e grau tecnológico.<br/>
-</p>
-<p>
-<b>Multiplicação da Recorrência Geográfica:</b><br/>
-Aparece em mais de 30 culturas (Atlântida, Lemúria, Aztlán, Kumari Kandam). Multiplicação de peso x2^29 = 536.870.912. Considerado virtualmente impossível de ser coincidência.
-</p>
-<p>
-<b>Mapa de Convergências:</b><br/>
-- Civilização anterior ao ciclo atual.<br/>
-- Avanço tecnológico e energético.<br/>
-- Colapso por desequilíbrio moral e energético.<br/>
-- Destruição por cataclismos naturais e falhas internas.<br/>
-- Arquétipo universal de queda e reinício.<br/>
-</p>
-<p>
-<b>Mapa de Divergências:</b><br/>
-- Localização exata.<br/>
-- Período cronológico.<br/>
-- Grau de domínio tecnológico.<br/>
-</p>
-<p>
-<b>Interpretação Simbólica Final:</b><br/>
-A análise simbólica da Atlântida, sob o método SASC, aponta que não se trata de mito isolado, mas de memória ancestral codificada globalmente.<br/>
-O colapso representa um alerta universal: avanço tecnológico sem equilíbrio espiritual e ético leva ao colapso.<br/>
-O arquétipo é: avanço → desequilíbrio → queda → esquecimento → reinício.<br/>
-O SASC confirma que este padrão é um dado simbólico forte, recorrente e não uma ficção isolada.<br/>
-</p>
+<p>Conteúdo completo da Atlântida.</p>
 </div>
 </div>
-<!-- Popup Pirâmides -->
-<div class="popup" id="popup-piramides">
+
+<div id="popup-piramides" class="popup">
 <div class="popup-content">
-<span class="fechar" onclick="fecharPopup('piramides')">×</span>
+<span class="fechar" onclick="fecharPopup('piramides')">&times;</span>
 <h2>🔺 Análise Simbólica — Data Real das Pirâmides</h2>
-<p>[Conteúdo placeholder para ser preenchido na próxima etapa]</p>
+<p>Conteúdo completo das Pirâmides.</p>
 </div>
 </div>
-<!-- Popup Cruzamento -->
-<div class="popup" id="popup-cruzamento">
+
+<div id="popup-cruzamento" class="popup">
 <div class="popup-content">
-<span class="fechar" onclick="fecharPopup('cruzamento')">×</span>
+<span class="fechar" onclick="fecharPopup('cruzamento')">&times;</span>
 <h2>🔗 Cruzamento entre as três análises</h2>
-<p>[Conteúdo placeholder para ser preenchido na próxima etapa]</p>
+<p>Conteúdo completo do Cruzamento final.</p>
 </div>
 </div>
+
 <script>
-function abrirPopup(id) {
-    document.getElementById('popup-' + id).style.display = 'block';
-}
-function fecharPopup(id) {
-    document.getElementById('popup-' + id).style.display = 'none';
-}
+function abrirPopup(id) { document.getElementById('popup-' + id).style.display = 'block'; }
+function fecharPopup(id) { document.getElementById('popup-' + id).style.display = 'none'; }
 </script>
-<style>
-.popup {
-    display: none;
-    position: fixed;
-    z-index: 999;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.8);
-}
-.popup-content {
-    background-color: #fefefe;
-    margin: 5% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    max-height: 80%;
-    overflow-y: auto;
-    border-radius: 10px;
-}
-.fechar {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-.fechar:hover,
-.fechar:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-button {
-    margin: 10px;
-    padding: 10px 20px;
-    cursor: pointer;
-}
-</style>
-</main>
-<footer>
-<p>© 2025 SASC - Todos os direitos reservados.</p>
-</footer>
 </body>
 </html>
