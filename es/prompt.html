@@ -1,141 +1,62 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Prompt - SASC">
-  <title>Prompt - SASC</title>
-  <link rel="stylesheet" href="css/style.css">
-  <script>
-    function copyPrompt() {
-      navigator.clipboard.writeText(`
-Método SASC — Sistema de Análise Simbólica Comparativa
-
-Antes de prosseguir, você precisa compreender o que é o Método SASC.
-
-O SASC é uma metodologia para análise, cruzamento e interpretação simbólica de informações. Ele parte do princípio de que a verdade se revela nos padrões recorrentes que atravessam culturas, tempos, tradições e diferentes linhas de conhecimento.
-
-Fontes:
-1. 🏺 Arqueologia e vestígios materiais
-2. 📖 História oficial e registros acadêmicos
-3. 🌍 Folclore, mitos e tradições orais
-4. 🔮 Canalizações, mediunidade e registros não convencionais
-5. 🧘 Saberes espirituais, esotéricos e simbólicos universais
-6. 🗺️ Rastro cultural e linguístico
-
-Pilares Operacionais:
-✔️ Atribuição de Pesos (0-5 por fonte)
-✔️ Alternância de Pesos (testar robustez em diferentes rodadas)
-✔️ Análise de Recorrências
-✔️ Multiplicação da Recorrência Geográfica
-✔️ Mapeamento de Convergências
-✔️ Registro de Divergências
-
-Multiplicação da Recorrência Geográfica:
-Quando um símbolo, padrão ou tema aparece em culturas diferentes e separadas geograficamente, seu peso simbólico é amplificado. Isso reduz a chance de ser uma coincidência local e indica uma verdade simbólica de caráter universal.
-
-Alternância de Pesos:
-O método exige múltiplas rodadas de análise, alterando os pesos atribuídos às fontes. Isso permite avaliar a robustez dos padrões simbólicos encontrados sob diferentes lentes (científica, espiritual, histórica, folclórica, integrativa). Quanto mais um padrão resiste às alterações de pesos, mais forte ele é.
-
-Prompt Operacional:
-Tema: [inserir tema]
-Perfil: [Neutro | Científico | Espiritual | Histórico | Folclórico | Integrativo]
-
-Pesos:
-- Arqueologia: [0-5]
-- História Oficial: [0-5]
-- Folclore: [0-5]
-- Canalizações: [0-5]
-- Saberes Espirituais: [0-5]
-- Rastro Cultural e Linguístico: [0-5]
-
-Regras:
-- Aplicar análise de recorrência simbólica
-- Aplicar multiplicação da recorrência geográfica
-- Alternar pesos em múltiplas rodadas
-- Mapear convergências e divergências
-
-Saída:
-1. Mapa de Convergências
-2. Divergências encontradas
-3. Interpretação final dos padrões simbólicos
-`);
-      alert('Prompt copiado com sucesso!');
-    }
-  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SASC - Prompt</title>
+    <link rel="stylesheet" href="../style.css">
+    <script>
+        function copiarPrompt(id) {
+            var text = document.querySelector('pre').innerText;
+            navigator.clipboard.writeText(text);
+            alert("Prompt copiado!");
+        }
+    </script>
 </head>
 <body>
-
-    <header style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
-      <div style="margin-bottom: 10px;">
-        <img src="images/sasc_logo_black.png" alt="SASC Logo" style="height: 50px;">
-      </div>
-      <nav>
-        <ul style="display: flex; list-style: none; margin: 0; padding: 0;">
-          <li style="margin: 0 15px;"><a href="../index.html">Inicio</a></li><li style="margin: 0 15px;"><a href="sobre.html">Sobre</a></li><li style="margin: 0 15px;"><a href="metodo.html">Método</a></li><li style="margin: 0 15px;"><a href="prompt.html">Prompt</a></li><li style="margin: 0 15px;"><a href="analises.html">Análisis</a></li><li style="margin: 0 15px;"><a href="contato.html">Contacto</a></li>
-        </ul>
-      </nav>
+    <header>
+        <h1>SASC - Sistema de Análise Simbólica Comparativa</h1>
     </header>
-    
-<main>
-  <h2>Prompt Operacional do Método SASC</h2>
-  <p>Inclui definição completa do método, pilares operacionais, explicação da multiplicação da recorrência geográfica e da alternância de pesos.</p>
-  <textarea rows="25" cols="100">
-Método SASC — Sistema de Análise Simbólica Comparativa
-
-Antes de prosseguir, você precisa compreender o que é o Método SASC.
-
-O SASC é uma metodologia para análise, cruzamento e interpretação simbólica de informações. Ele parte do princípio de que a verdade se revela nos padrões recorrentes que atravessam culturas, tempos, tradições e diferentes linhas de conhecimento.
-
-Fontes:
-1. 🏺 Arqueologia e vestígios materiais
-2. 📖 História oficial e registros acadêmicos
-3. 🌍 Folclore, mitos e tradições orais
-4. 🔮 Canalizações, mediunidade e registros não convencionais
-5. 🧘 Saberes espirituais, esotéricos e simbólicos universais
-6. 🗺️ Rastro cultural e linguístico
-
-Pilares Operacionais:
-✔️ Atribuição de Pesos (0-5 por fonte)
-✔️ Alternância de Pesos (testar robustez em diferentes rodadas)
-✔️ Análise de Recorrências
-✔️ Multiplicação da Recorrência Geográfica
-✔️ Mapeamento de Convergências
-✔️ Registro de Divergências
-
-Multiplicação da Recorrência Geográfica:
-Quando um símbolo, padrão ou tema aparece em culturas diferentes e separadas geograficamente, seu peso simbólico é amplificado. Isso reduz a chance de ser uma coincidência local e indica uma verdade simbólica de caráter universal.
-
-Alternância de Pesos:
-O método exige múltiplas rodadas de análise, alterando os pesos atribuídos às fontes. Isso permite avaliar a robustez dos padrões simbólicos encontrados sob diferentes lentes (científica, espiritual, histórica, folclórica, integrativa). Quanto mais um padrão resiste às alterações de pesos, mais forte ele é.
-
-Prompt Operacional:
-Tema: [inserir tema]
+    <nav>
+        <a href="index.html">Início</a> |
+        <a href="sobre.html">Sobre</a> |
+        <a href="metodo.html">Método</a> |
+        <a href="prompt.html">Prompt</a>
+    </nav>
+    <main>
+        
+<h2>Prompt Operativo - Español</h2>
+<p>El SASC es una metodología para el análisis, cruce e interpretación simbólica de información...</p>
+<pre>
+Tema: [insertar tema]
 Perfil: [Neutro | Científico | Espiritual | Histórico | Folclórico | Integrativo]
 
 Pesos:
-- Arqueologia: [0-5]
-- História Oficial: [0-5]
+- Arqueología: [0-5]
+- Historia Oficial: [0-5]
 - Folclore: [0-5]
-- Canalizações: [0-5]
-- Saberes Espirituais: [0-5]
-- Rastro Cultural e Linguístico: [0-5]
+- Canalizaciones: [0-5]
+- Saberes Espirituales: [0-5]
+- Rastro Cultural y Lingüístico: [0-5]
 
-Regras:
-- Aplicar análise de recorrência simbólica
-- Aplicar multiplicação da recorrência geográfica
-- Alternar pesos em múltiplas rodadas
-- Mapear convergências e divergências
+Reglas:
+- Aplicar análisis de recurrencia simbólica
+- Aplicar multiplicación de la recurrencia geográfica (peso multiplicado por 2x por cada aparición adicional)
+- Alternar pesos en múltiples rondas
+- Mapear convergencias y divergencias
 
-Saída:
-1. Mapa de Convergências
-2. Divergências encontradas
-3. Interpretação final dos padrões simbólicos
-</textarea><br><br>
-  <button onclick="copyPrompt()" style="padding: 10px 20px; background-color: #111; color: white; border: none; cursor: pointer;">Copiar Prompt</button>
-</main>
-<footer>
-  <p>&copy; 2025 SASC - Todos os direitos reservados.</p>
-</footer>
+Salida:
+1. Mapa de Convergencias
+2. Divergencias encontradas
+3. Interpretación final de los patrones simbólicos
+</pre>
+<button onclick="copiarPrompt('es')">Copiar Prompt</button>
+
+    </main>
+    <footer>
+        <p>&copy; 2025 SASC - Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
+    
