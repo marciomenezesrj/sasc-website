@@ -1,62 +1,63 @@
-
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SASC - Prompt</title>
-    <link rel="stylesheet" href="../style.css">
-    <script>
-        function copiarPrompt(id) {
-            var text = document.querySelector('pre').innerText;
-            navigator.clipboard.writeText(text);
-            alert("Prompt copiado!");
-        }
-    </script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Método - SASC" name="description"/>
+<title>Prompt - SASC</title>
+<link href="css/style.css" rel="stylesheet"/>
 </head>
 <body>
-    <header>
-        <h1>SASC - Sistema de Análise Simbólica Comparativa</h1>
-    </header>
-    <nav>
-        <a href="index.html">Início</a> |
-        <a href="sobre.html">Sobre</a> |
-        <a href="metodo.html">Método</a> |
-        <a href="prompt.html">Prompt</a>
-    </nav>
-    <main>
-        
-<h2>Operational Prompt - English</h2>
-<p>SASC is a methodology for analysis, cross-referencing, and symbolic interpretation of information...</p>
-<pre>
-Topic: [insert topic]
-Profile: [Neutral | Scientific | Spiritual | Historical | Folkloric | Integrative]
+<header style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+<div style="margin-bottom: 10px;">
+<img alt="SASC Logo" src="images/sasc_logo_black.png" style="height: 50px;"/>
+</div>
+<nav>
+<ul style="display: flex; list-style: none; margin: 0; padding: 0;">
+<li style="margin: 0 15px;"><a href="../index.html">Início</a></li><li style="margin: 0 15px;"><a href="sobre.html">Sobre</a></li><li style="margin: 0 15px;"><a href="metodo.html">Método</a></li><li style="margin: 0 15px;"><a href="prompt.html">Prompt</a></li><li style="margin: 0 15px;"><a href="analises.html">Análises</a></li><li style="margin: 0 15px;"><a href="contato.html">Contato</a></li>
+</ul>
+</nav>
+</header>
+<main>
+<h1>Prompt Operacional - SASC</h1>
+<p>Esta página fornece o prompt estruturado do método SASC, utilizado para realizar análises simbólicas comparativas. Copie o prompt abaixo, insira o tema desejado e ajuste os pesos conforme sua análise.</p>
+<h2>Prompt</h2>
+<pre id="prompt">
+Tema: [inserir tema]
+Perfil: [Neutro | Científico | Espiritual | Histórico | Folclórico | Integrativo]
 
-Weights:
-- Archaeology: [0-5]
-- Official History: [0-5]
-- Folklore: [0-5]
-- Channeled Sources: [0-5]
-- Spiritual Knowledge: [0-5]
-- Cultural and Linguistic Trace: [0-5]
+Pesos:
+- Arqueologia: [0-5]
+- História Oficial: [0-5]
+- Folclore: [0-5]
+- Canalizações: [0-5]
+- Saberes Espirituais: [0-5]
+- Rastro Cultural e Linguístico: [0-5]
 
-Rules:
-- Apply symbolic recurrence analysis
-- Apply geographical recurrence multiplication (weight multiplied by 2x for each occurrence beyond the first)
-- Alternate weights in multiple rounds
-- Map convergences and divergences
+Regras:
+- Aplicar análise de recorrência simbólica
+- Aplicar multiplicação da recorrência geográfica (peso multiplicado por 2x por ocorrência além da primeira)
+- Alternar pesos em múltiplas rodadas
+- Mapear convergências e divergências
 
-Output:
-1. Convergence Map
-2. Found Divergences
-3. Final interpretation of the symbolic patterns
+Saída:
+1. Mapa de Convergências
+2. Divergências encontradas
+3. Interpretação final dos padrões simbólicos
 </pre>
-<button onclick="copiarPrompt('en')">Copy Prompt</button>
-
-    </main>
-    <footer>
-        <p>&copy; 2025 SASC - Todos os direitos reservados.</p>
-    </footer>
+<button onclick="copiarPrompt()">Copiar Prompt</button>
+<script>
+function copiarPrompt() {
+    var texto = document.getElementById('prompt').innerText;
+    navigator.clipboard.writeText(texto).then(() => {
+        alert('Prompt copiado!');
+    });
+}
+</script>
+</main>
+<footer>
+<p>© 2025 SASC - Todos os direitos reservados.</p>
+</footer>
 </body>
 </html>
-    
