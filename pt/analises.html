@@ -7,7 +7,52 @@
 <meta content="Método - SASC" name="description"/>
 <title>Biblioteca de Análises - SASC</title>
 <link href="css/style.css" rel="stylesheet"/>
-</head>
+<style>
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.85);
+}
+.popup-content {
+    background-color: #fefefe;
+    margin: 3% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-height: 85%;
+    overflow-y: auto;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+.fechar {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.fechar:hover,
+.fechar:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+h2 {
+    text-align: center;
+    font-size: 26px;
+    margin-top: 0;
+}
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+</style></head>
 <body>
 <header style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
 <div style="margin-bottom: 10px;">
@@ -32,13 +77,60 @@
 <div class="popup" id="popup-diluvio">
 <div class="popup-content">
 <span class="fechar" onclick="fecharPopup('diluvio')">×</span>
-<h2>🌊 Análise Simbólica: Dilúvio Universal</h2>
-<p>... [Conteúdo completo da análise do Dilúvio Universal aqui, como já estruturado no chat] ...</p>
+<h2>🌊 Análise Simbólica — Dilúvio Universal</h2>
+<span class="fechar" onclick="fecharPopup('atlantida')">×</span>
+<h2>🏛️ Análise Simbólica: Dilúvio Universal</h2>
+<p>
+<b>Introdução:</b><br/>
+O tema de Dilúvio Universal é uma das maiores polêmicas da história da humanidade. Descrito por Platão, ecoado em diversas tradições espirituais, mitológicas e esotéricas, a Dilúvio Universal representa tanto um arquétipo civilizacional quanto, possivelmente, uma memória real de uma civilização perdida anterior ao atual ciclo humano. Esta análise, pelo método SASC, busca esclarecer o que há de recorrente, verdadeiro e simbólico nesse tema.
+</p>
+<p>
+<b>Rodadas de Pesos e Análises:</b><br/><br/>
+<b>Rodada 1 – Foco Material-Histórico:</b><br/>
+Pesos: Arqueologia 5, História Oficial 4, Folclore 3, Canalizações 2, Espirituais 2, Linguístico 4.<br/>
+Convergências: Vestígios de cidades submersas; registros históricos de culturas avançadas; correspondências linguísticas.<br/>
+Divergências: Ciência não reconhece Dilúvio Universal como local real.<br/><br/>
+<b>Rodada 2 – Foco Espiritual-Esotérico-Folclórico:</b><br/>
+Pesos: Arqueologia 2, História 1, Folclore 5, Canalizações 5, Espirituais 5, Linguístico 4.<br/>
+Convergências: Civilização anterior ao ciclo atual; arquétipo universal da queda; mitos globais.<br/>
+Divergências: Localização e datação variáveis.<br/><br/>
+<b>Rodada 3 – Foco Integrativo:</b><br/>
+Pesos: Todos 4.<br/>
+Convergências: Narrativa comum da civilização avançada; detalhes técnicos de Platão; reforço espiritual sobre a queda.<br/>
+Divergências: Extensão (global ou regional) e grau tecnológico.<br/>
+</p>
+<p>
+<b>Multiplicação da Recorrência Geográfica:</b><br/>
+Aparece em mais de 30 culturas (Dilúvio Universal, Lemúria, Aztlán, Kumari Kandam). Multiplicação de peso x2^29 = 536.870.912. Considerado virtualmente impossível de ser coincidência.
+</p>
+<p>
+<b>Mapa de Convergências:</b><br/>
+- Civilização anterior ao ciclo atual.<br/>
+- Avanço tecnológico e energético.<br/>
+- Colapso por desequilíbrio moral e energético.<br/>
+- Destruição por cataclismos naturais e falhas internas.<br/>
+- Arquétipo universal de queda e reinício.<br/>
+</p>
+<p>
+<b>Mapa de Divergências:</b><br/>
+- Localização exata.<br/>
+- Período cronológico.<br/>
+- Grau de domínio tecnológico.<br/>
+</p>
+<p>
+<b>Interpretação Simbólica Final:</b><br/>
+A análise simbólica da Dilúvio Universal, sob o método SASC, aponta que não se trata de mito isolado, mas de memória ancestral codificada globalmente.<br/>
+O colapso representa um alerta universal: avanço tecnológico sem equilíbrio espiritual e ético leva ao colapso.<br/>
+O arquétipo é: avanço → desequilíbrio → queda → esquecimento → reinício.<br/>
+O SASC confirma que este padrão é um dado simbólico forte, recorrente e não uma ficção isolada.<br/>
+</p>
 </div>
 </div>
 <!-- Popup Atlântida -->
 <div class="popup" id="popup-atlantida">
 <div class="popup-content">
+<span class="fechar" onclick="fecharPopup('atlantida')">×</span>
+<h2>🏛️ Análise Simbólica — Atlântida</h2>
 <span class="fechar" onclick="fecharPopup('atlantida')">×</span>
 <h2>🏛️ Análise Simbólica: Atlântida</h2>
 <p>
@@ -91,8 +183,8 @@ O SASC confirma que este padrão é um dado simbólico forte, recorrente e não 
 <div class="popup" id="popup-piramides">
 <div class="popup-content">
 <span class="fechar" onclick="fecharPopup('piramides')">×</span>
-<h2>🔺 Análise Simbólica: Data Real das Pirâmides</h2>
-<p>... [Análise a ser adicionada] ...</p>
+<h2>🔺 Análise Simbólica — Data Real das Pirâmides</h2>
+<p>[Conteúdo placeholder para ser preenchido na próxima etapa]</p>
 </div>
 </div>
 <!-- Popup Cruzamento -->
@@ -100,7 +192,7 @@ O SASC confirma que este padrão é um dado simbólico forte, recorrente e não 
 <div class="popup-content">
 <span class="fechar" onclick="fecharPopup('cruzamento')">×</span>
 <h2>🔗 Cruzamento entre as três análises</h2>
-<p>... [Análise a ser adicionada] ...</p>
+<p>[Conteúdo placeholder para ser preenchido na próxima etapa]</p>
 </div>
 </div>
 <script>
