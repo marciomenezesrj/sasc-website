@@ -22,6 +22,7 @@
 <main>
 <h1>Prompt Operacional - SASC</h1>
 <p>Esta página fornece o prompt estruturado do método SASC, utilizado para realizar análises simbólicas comparativas.</p>
+<button onclick="copiarPrompt()">📋 Copiar Prompt</button>
 <pre id="prompt">
 Método SASC — Sistema de Análise Simbólica Comparativa
 
@@ -44,10 +45,10 @@ Pilares Operacionais:
 ✔️ Registro de Divergências
 
 Multiplicação da Recorrência Geográfica:
-- Sempre que um símbolo, padrão ou tema aparece em culturas diferentes e separadas geograficamente, seu peso simbólico é multiplicado por 2 para cada ocorrência além da primeira.
+Sempre que um símbolo, padrão ou tema aparece em culturas diferentes e separadas geograficamente, seu peso simbólico é multiplicado por 2 para cada ocorrência além da primeira.
 
 Alternância de Pesos:
-- O método exige múltiplas rodadas de análise, alterando os pesos atribuídos às fontes. Isso permite testar a robustez dos padrões simbólicos sob diferentes lentes interpretativas (científica, espiritual, histórica, folclórica, integrativa).
+O método exige múltiplas rodadas de análise, alterando os pesos atribuídos às fontes. Isso permite testar a robustez dos padrões simbólicos sob diferentes lentes interpretativas (científica, espiritual, histórica, folclórica, integrativa).
 
 Prompt Operacional:
 
@@ -70,12 +71,13 @@ Instruções Operacionais:
 5. Mapear as Divergências — elementos isolados, contraditórios ou pouco recorrentes.
 6. Gerar uma Interpretação Final — analisando os padrões simbólicos e o que eles revelam sobre o tema estudado.
 
+✔️ Utilize todo seu conhecimento interno, abrangendo registros históricos, arqueológicos, folclóricos, espirituais, canalizados, culturais e linguísticos conhecidos, presentes em sua base de dados e treinamento. A análise deve se basear exclusivamente em padrões recorrentes documentados ou amplamente referenciados nessas fontes, evitando criações arbitrárias ou suposições não fundamentadas.
+
 Saída esperada:
 - 🔷 Mapa de Convergências
 - 🔶 Mapa de Divergências
 - 🔮 Interpretação final dos padrões simbólicos encontrados
 </pre>
-<button onclick="copiarPrompt()">Copiar Prompt</button>
 <script>
 function copiarPrompt() {
     var texto = document.getElementById('prompt').innerText;
